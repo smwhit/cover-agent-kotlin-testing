@@ -1,0 +1,6 @@
+OK
+
+cover-agent --source-file-path=src/main/java/org/example/MathsOps.java --test-file-path=src/test/java/org/example/MathsOpsTest.java --test-command="./gradlew clean test jacocoTestReport" --max-iterations=1 --code-coverage-report-path=build/reports/jacoco/test/jacocoTestReport.csv --api-base=http://localhost:4000 --model openai/gpt-4o-mini --coverage-type jacoco --desired-coverage 75
+
+NOK
+cover-agent --source-file-path=src/main/kotlin/org/example/MathsOpsK.kt --test-file-path=src/test/kotlin/org/example/MathsOpsKTest.kt --test-command="./gradlew clean test jacocoTestReport" --max-iterations=1 --code-coverage-report-path=build/reports/jacoco/test/jacocoTestReport.csv --api-base=http://localhost:4000 --model openai/gpt-4o-mini --coverage-type jacoco --desired-coverage 75
